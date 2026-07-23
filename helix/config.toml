@@ -1,0 +1,38 @@
+theme = "onedarkpro"
+
+[editor]
+line-number = "relative"
+auto-format = true
+true-color = true
+color-modes = true
+bufferline = "multiple"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+separator = "|"
+left = ["mode", "spacer", "version-control", "spacer", "file-name", "read-only-indicator", "spinner", "file-modification-indicator"]
+right = ["diagnostics", "selections", "register", "position", "file-encoding"]
+
+[editor.whitespace.render]
+tab = "all"
+space = "all"
+nbsp = "all"
+nnbsp = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+
+[keys.normal]
+X = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.normal.z]
+"-" = ":theme onedarkpro"
+"=" = ":theme zed_onelight"
