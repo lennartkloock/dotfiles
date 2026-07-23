@@ -1,0 +1,19 @@
+[user]
+	email = lennart.kloock@protonmail.com
+	name = Lennart Kloock
+	signingkey = BD7BC3F7279A3CAE
+[commit]
+	gpgsign = true
+[core]
+	editor = helix
+	pager = delta
+[init]
+	defaultbranch = main
+[tag]
+	gpgsign = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictStyle = zdiff3
