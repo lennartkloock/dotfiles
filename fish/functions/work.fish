@@ -1,5 +1,5 @@
 function work -a week_diff --description 'show work in week starting on tuesday'
-    if not count $argv >/dev/null
+    if test -z $week_diff
         set week_diff 0
     end
 

@@ -1,0 +1,14 @@
+[[language]]
+name = "typst"
+language-servers = ["tinymist", "ltex", "wakatime"]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "wakatime"]
+
+[language-server.ltex]
+command = "/usr/bin/ltex-ls-plus"
+config = { ltex.language = "en-US" }
+
+[language-server.wakatime]
+command = "wakatime-ls"
