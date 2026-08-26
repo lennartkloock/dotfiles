@@ -4,6 +4,7 @@ function work -a action week_diff --description 'work util command related to ti
     end
 
     if test "$action" = work
+        ping -c 1 -q kokuna.staging.wg.identeco.de || return $status
         timew start
         ssh kokuna
         timew stop

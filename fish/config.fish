@@ -1,6 +1,8 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    direnv hook fish | source
+    if type -q direnv
+        direnv hook fish | source
+    end
 end
 
 fish_add_path ~/.local/bin
