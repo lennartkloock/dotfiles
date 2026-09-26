@@ -55,6 +55,7 @@ font-feature = +liga, +calt
 theme = dark:Atom One Dark, light:Atom One Light
 gtk-titlebar-hide-when-maximized = true
 cursor-style = block
+mouse-hide-while-typing = true
 
 command = fish
 shell-integration = fish
