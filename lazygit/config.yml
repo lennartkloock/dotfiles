@@ -1,5 +1,4 @@
 git:
   diffRenderers:
     - colorArg: always
-      # --diff-so-fancy as a workaround for https://github.com/jesseduffield/lazygit/issues/4550
-      command: delta --diff-so-fancy --paging=never
+      command: delta --{{colorScheme}} --paging=never
