@@ -15,11 +15,11 @@ function work -a action week_diff --description 'work util command related to ti
         end
 
         if test (date +%u) = 4
-            set start (date --date="thursday" +%s)
+            set start (date --date="tuesday" +%s)
         else
-            set start (date --date="last thursday" +%s)
+            set start (date --date="last tuesday" +%s)
         end
-        set end (date --date="next thursday" +%s)
+        set end (date --date="next tuesday" +%s)
 
         set diff (math "$week_diff * 7 * 24 * 60 * 60")
         set start (math $start - $diff)
