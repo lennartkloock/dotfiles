@@ -14,7 +14,7 @@ function work -a action week_diff --description 'work util command related to ti
             set week_diff 0
         end
 
-        if test (date +%u) = 4
+        if test (date +%u) = 2
             set start (date --date="tuesday" +%s)
         else
             set start (date --date="last tuesday" +%s)
